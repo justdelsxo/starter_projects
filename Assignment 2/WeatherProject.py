@@ -30,7 +30,7 @@ def outfit_recommendations(temp):
     else:
         return None
 
-outfits = outfit_recommendations(feels_like)
+outfits = outfit_recommendations(temp)
 
 print(f"Weather type: {weather[:6]}")
 print(f"🌤️The weather in {country} is: {temp}°C but feels like {feels_like}°C")
