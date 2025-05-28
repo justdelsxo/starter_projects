@@ -3,7 +3,7 @@ In this project, i have created an outfit packer recommender which allows people
 
 ## Requests Library📚
 - Install requests in the terminal before importing the library
-- Requests is used to connect to the internet to send and receive information
+- Requests is used to connect to the internet to access information
 
 ## Open Weather API☀️
 
