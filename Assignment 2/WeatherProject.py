@@ -12,11 +12,14 @@ api_key = "5b64698ebf48aad2acf480d96990c289"
 user = input("Which Country or City are you travelling to? ")
 
 response =  requests.get(f"https://api.openweathermap.org/data/2.5/weather?q={user}&units=metric&APPID={api_key}")
+data = response.json()
 
-country = response.json()["name"]
-weather = response.json()["weather"][0]["main"]
-temp = round(response.json()["main"]["temp"])
-feels_like = round(response.json()["main"]["feels_like"])
+print(data)
+
+country = data["name"]
+weather = data["weather"][0]["description"]
+temp = round(data["main"]["temp"])
+feels_like = round(data["main"]["feels_like"])
 
 def outfit_recommendations(temp):
     if temp >= 30:
@@ -32,7 +35,7 @@ def outfit_recommendations(temp):
 
 outfits = outfit_recommendations(temp)
 
-print(f"Weather type: {weather[:6]}")
+print(f"Weather type: {weather[:20]}")
 print(f"🌤️The weather in {country} is: {temp}°C but feels like {feels_like}°C")
 print(f"🧥 Recommended clothing to pack for {country}'s weather:")
 for item in outfits:
