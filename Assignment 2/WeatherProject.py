@@ -60,3 +60,13 @@ try:
 
 except requests.exceptions.RequestException as e:
     print(f"Network error: {e}")
+
+
+with open("final_project.txt", "w") as file:
+    file.write("The weather in Dubai is: 33°C but feels like 37°C"
+               "\n -Recommended clothing to pack for Dubai's weather:"
+               "\n -Shorts"
+               "\n -Lightweight T-shirt's"
+               "\n -Sun Dresses"
+               "\n -Sandals"
+               "\n Oh!, Dont forget your SPF 50, sunglasses & a fan.")

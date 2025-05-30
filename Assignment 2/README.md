@@ -1,6 +1,11 @@
 # Outfit Recommender Python Project
 In this project, i have created an outfit packer recommender which allows people to find the current weather in the location they will be travelling to and recommends the type of clothing and accessories they should pack for their trip.
 
+## Datetime
+
+- The datetime module is included to show the current date and time in the weather report.
+- This is a built in Python library so it just needs to be imported at the beginning of the script
+
 ## Requests Library📚
 - Install requests in the terminal before importing the library
 - Requests is used to connect to the internet to access information
