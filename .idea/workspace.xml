@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="067dd964-444a-4f4d-8e61-49874cd901ff" name="Changes" comment="Final project update.&#10;&#10;- Finalised write to text file&#10;- Updated readme&#10;- Finalised code" />
+    <list default="true" id="067dd964-444a-4f4d-8e61-49874cd901ff" name="Changes" comment="Centralised screenshots from 1st assignment" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="ExportToHTMLSettings">
-    <option name="printScope" value="1" />
-    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/exportToHTML" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -35,22 +31,12 @@
     &quot;assignee&quot;: &quot;justdelsxo&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/justdelsxo/CFG-Assignments.git",
-    "accountId": "f6cef9b8-26f7-4302-a30f-d56128cfa262"
-  },
-  "recentNewPullRequestHead": {
-    "server": {
-      "useHttp": false,
-      "host": "github.com",
-      "port": null,
-      "suffix": null
-    },
-    "owner": "justdelsxo",
-    "repository": "CFG-Assignments"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/justdelsxo/CFG-Assignments.git&quot;,
+    &quot;accountId&quot;: &quot;f6cef9b8-26f7-4302-a30f-d56128cfa262&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -64,13 +50,11 @@
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.WeatherProject.executor": "Run",
-    "Python.final.executor": "Run",
     "Python.outfit_suggestions.executor": "Run",
     "Python.travel_product_recommender.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "#2 on assignment__two",
+    "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -81,7 +65,6 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Assignment 2" />
       <recent name="$PROJECT_DIR$/Screenshots" />
     </key>
   </component>
@@ -102,16 +85,6 @@
       <updated>1747997860465</updated>
       <workItem from="1747997861975" duration="10881000" />
       <workItem from="1748083137321" duration="361000" />
-      <workItem from="1748165286771" duration="1194000" />
-      <workItem from="1748166613101" duration="69000" />
-      <workItem from="1748167648488" duration="274000" />
-      <workItem from="1748170258420" duration="357000" />
-      <workItem from="1748176169656" duration="991000" />
-      <workItem from="1748344157368" duration="883000" />
-      <workItem from="1748349755083" duration="1479000" />
-      <workItem from="1748459235057" duration="682000" />
-      <workItem from="1748460219904" duration="2679000" />
-      <workItem from="1748619408383" duration="4247000" />
     </task>
     <task id="LOCAL-00001" summary="Amended images">
       <option name="closed" value="true" />
@@ -145,87 +118,7 @@
       <option name="project" value="LOCAL" />
       <updated>1748083279304</updated>
     </task>
-    <task id="LOCAL-00005" summary="1st draft - Work on error message if city or country is not recognised">
-      <option name="closed" value="true" />
-      <created>1748083983958</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1748083983958</updated>
-    </task>
-    <task id="LOCAL-00006" summary="2nd draft - Work on error message if city or country is not recognised">
-      <option name="closed" value="true" />
-      <created>1748166179641</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1748166179641</updated>
-    </task>
-    <task id="LOCAL-00007" summary="2nd draft - Work on error message if city or country is not recognised">
-      <option name="closed" value="true" />
-      <created>1748172145501</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1748172145501</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Updated readme.md with detailed steps">
-      <option name="closed" value="true" />
-      <created>1748350264478</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1748350264478</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Updated readme.md with detailed steps">
-      <option name="closed" value="true" />
-      <created>1748351088196</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1748351088196</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Updated readme.md with detailed steps">
-      <option name="closed" value="true" />
-      <created>1748460854565</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1748460854565</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Updated readme.md with detailed steps">
-      <option name="closed" value="true" />
-      <created>1748460990991</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1748460990991</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Updated readme.md with detailed steps">
-      <option name="closed" value="true" />
-      <created>1748461031832</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1748461031832</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Used additional library and handled input error message">
-      <option name="closed" value="true" />
-      <created>1748621464147</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1748621464147</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Final project update.&#10;&#10;- Finalised write to text file&#10;- Updated readme&#10;- Finalised code">
-      <option name="closed" value="true" />
-      <created>1748638021509</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1748638021510</updated>
-    </task>
-    <option name="localTasksCounter" value="15" />
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,16 +128,9 @@
     <MESSAGE value="Amended images" />
     <MESSAGE value="First draft of the outfit recommender. Need to work on an error message for when a country is not recognised" />
     <MESSAGE value="Centralised screenshots from 1st assignment" />
-    <MESSAGE value="1st draft - Work on error message if city or country is not recognised" />
-    <MESSAGE value="2nd draft - Work on error message if city or country is not recognised" />
-    <MESSAGE value="Updated readme.md with detailed steps" />
-    <MESSAGE value="Used additional library and handled input error message" />
-    <MESSAGE value="Final project update.&#10;&#10;- Finalised write to text file&#10;- Updated readme&#10;- Finalised code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final project update.&#10;&#10;- Finalised write to text file&#10;- Updated readme&#10;- Finalised code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Centralised screenshots from 1st assignment" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/CFG_Assignments$WeatherProject.coverage" NAME="WeatherProject Coverage Results" MODIFIED="1748637472056" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignment 2" />
-    <SUITE FILE_PATH="coverage/CFG_Assignments$final.coverage" NAME="final Coverage Results" MODIFIED="1748621787795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignment 2" />
     <SUITE FILE_PATH="coverage/CFG_Assignments$outfit_suggestions.coverage" NAME="outfit_suggestions Coverage Results" MODIFIED="1748082397626" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CFG_Assignments$travel_product_recommender.coverage" NAME="travel_product_recommender Coverage Results" MODIFIED="1748025354022" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
