@@ -35,7 +35,7 @@ Unit ENUM('Kg', 'g', 'Litre', 'ml', 'Pieces') NOT NULL
 
 CREATE TABLE Inventory (
 Inventory_id INT AUTO_INCREMENT PRIMARY KEY,
-Product_id INT, FOREIGN KEY (Product_id) REFERENCES Products(Product_id),
+Product_id INT, FOREIGN KEY (Product_id) REFERENCES Products(Product_id) ON DELETE CASCADE,
 Stock_level INT NOT NULL
 );
 
@@ -43,8 +43,8 @@ Stock_level INT NOT NULL
 
 CREATE TABLE Purchase_orders (
 Order_id INT AUTO_INCREMENT PRIMARY KEY,
-Product_id INT, FOREIGN KEY (Product_id) REFERENCES Products(Product_id),
-Supplier_id INT, FOREIGN KEY (Supplier_id) REFERENCES Suppliers(Supplier_id),
+Product_id INT, FOREIGN KEY (Product_id) REFERENCES Products(Product_id) ON DELETE CASCADE,
+Supplier_id INT, FOREIGN KEY (Supplier_id) REFERENCES Suppliers(Supplier_id) ON DELETE CASCADE,
 Quantity INT NOT NULL,
 Order_date DATE NOT NULL,
 Status ENUM('Unfulfilled', 'Shipped', 'Delivered', 'Cancelled', 'Refunded') DEFAULT 'Unfulfilled' NOT NULL -- Setting 'Unfulfilled' as the default order status
@@ -200,4 +200,12 @@ LIMIT 1);
 DELETE FROM Suppliers
 WHERE Supplier_id = @least_supplied;
 
+-- Checking that the supplier has been removed from all related tables
+SELECT * 
+FROM Suppliers;
 
+SELECT * 
+FROM Purchase_orders;
+
+SELECT *
+FROM Products;

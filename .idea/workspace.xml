@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="067dd964-444a-4f4d-8e61-49874cd901ff" name="Changes" comment="Final project update.&#10;&#10;- Finalised write to text file&#10;- Updated readme&#10;- Finalised code">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="067dd964-444a-4f4d-8e61-49874cd901ff" name="Changes" comment="Completed sql assignment - ready for pull request">
+      <change beforePath="$PROJECT_DIR$/Assignment 3/Assignement-3.sql" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,24 +37,31 @@
     &quot;state&quot;: &quot;OPEN&quot;
   }
 }</component>
-  <component name="GitHubPullRequestState">{
-  &quot;prStates&quot;: [
+  <component name="GitHubPullRequestState"><![CDATA[{
+  "prStates": [
     {
-      &quot;id&quot;: {
-        &quot;id&quot;: &quot;PR_kwDOOrpLK86YVME4&quot;,
-        &quot;number&quot;: 4
+      "id": {
+        "id": "PR_kwDOOrpLK86YVME4",
+        "number": 4
       },
-      &quot;lastSeen&quot;: 1748639882767
+      "lastSeen": 1748639882767
     },
     {
-      &quot;id&quot;: {
-        &quot;id&quot;: &quot;PR_kwDOOrpLK86YVQmK&quot;,
-        &quot;number&quot;: 5
+      "id": {
+        "id": "PR_kwDOOrpLK86YVQmK",
+        "number": 5
       },
-      &quot;lastSeen&quot;: 1748639949418
+      "lastSeen": 1748639949418
+    },
+    {
+      "id": {
+        "id": "PR_kwDOOrpLK86YVTja",
+        "number": 6
+      },
+      "lastSeen": 1749849050000
     }
   ]
-}</component>
+}]]></component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/justdelsxo/CFG-Assignments.git&quot;,
@@ -80,26 +87,27 @@
     <option name="showLibraryContents" value="true" />
     <option name="sortKey" value="BY_TIME_DESCENDING" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.WeatherProject.executor&quot;: &quot;Run&quot;,
-    &quot;Python.outfit_suggestions.executor&quot;: &quot;Run&quot;,
-    &quot;Python.travel_product_recommender.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;#6 on assignment__two&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.WeatherProject.executor": "Run",
+    "Python.outfit_suggestions.executor": "Run",
+    "Python.travel_product_recommender.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "#7 on assignment__three__sql",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Assignment 3" />
       <recent name="$PROJECT_DIR$/Screenshots" />
     </key>
   </component>
@@ -124,6 +132,7 @@
       <workItem from="1749061732129" duration="66000" />
       <workItem from="1749144716011" duration="524000" />
       <workItem from="1749324587859" duration="43000" />
+      <workItem from="1749845413730" duration="583000" />
     </task>
     <task id="LOCAL-00001" summary="Amended images">
       <option name="closed" value="true" />
@@ -157,7 +166,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748083279304</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Completed sql assignment - ready for pull request">
+      <option name="closed" value="true" />
+      <created>1749845632293</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1749845632293</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,7 +184,8 @@
     <MESSAGE value="Amended images" />
     <MESSAGE value="First draft of the outfit recommender. Need to work on an error message for when a country is not recognised" />
     <MESSAGE value="Centralised screenshots from 1st assignment" />
-    <option name="LAST_COMMIT_MESSAGE" value="Centralised screenshots from 1st assignment" />
+    <MESSAGE value="Completed sql assignment - ready for pull request" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed sql assignment - ready for pull request" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/CFG_Assignments$WeatherProject.coverage" NAME="WeatherProject Coverage Results" MODIFIED="1748640059206" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignment 2" />
