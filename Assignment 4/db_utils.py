@@ -5,19 +5,19 @@ class DbConnectionError(Exception):
     pass
 
 def _connect_to_db():
-    cnx = mysql.connector.connect(
+    db_connection = mysql.connector.connect(
         host=HOST,
         user=USER,
         password=PASSWORD,
         database=DB_NAME
     )
-    return cnx
+    return db_connection
 
 def get_daily_affirmation():
     db_connection = None
     try:
         db_connection = _connect_to_db()
-        cur = db_connection.cursor()
+        cursor = db_connection.cursor()
         print(f"Connected to DB: {DB_NAME}")
 
         query = """
@@ -27,8 +27,8 @@ def get_daily_affirmation():
             LIMIT 1;
         """
 
-        cur.execute(query)
-        result = cur.fetchone()
+        cursor.execute(query)
+        result = cursor.fetchone()
 
         if result:
             return result[0]
@@ -45,24 +45,50 @@ def get_daily_affirmation():
             print("DB connection is closed")
 
 def add_affirmation_to_db(text, author, category):
-    cnx = None
+    db_connection = None
     try:
-        cnx = _connect_to_db()
-        cursor = cnx.cursor()
+        db_connection = _connect_to_db()
+        cursor = db_connection.cursor()
 
         query = """
             INSERT INTO affirmations (text, author, category)
             VALUES (%s, %s, %s)
         """
         cursor.execute(query, (text, author, category))
-        cnx.commit()
+        db_connection.commit()
         return "Affirmation added successfully"
 
     except Exception as e:
         raise DbConnectionError(f"DB insert error: {e}")
 
     finally:
-        if cnx:
-            cnx.close()
+        if db_connection:
+            db_connection.close()
+
+def get_affirmations_for_category(category):
+    db_connection = None
+    try:
+        db_connection = _connect_to_db()
+        cursor = db_connection.cursor()
+        query = """
+            SELECT text, author
+            FROM affirmations
+            WHERE category = %s
+        """
+        cursor.execute(query, (category,))
+        results = cursor.fetchall()
+
+        if results:
+            return [{'text': text, 'author': author} for text, author in results]
+        else:
+            return ["Sorry, no affirmations found for this category, try a different category or add your own affirmation :)"]
+
+    except Exception as e:
+        raise DbConnectionError(f"DB query error: {e}")
+
+    finally:
+        if db_connection:
+            db_connection.close()
+
 
 
