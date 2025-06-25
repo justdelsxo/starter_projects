@@ -1,5 +1,10 @@
-import requests
-from config import API_BASE_URL
+from dotenv import load_dotenv
+import os, requests
+
+load_dotenv()
+
+API_URL = os.getenv("API_URL")
+
 
 categories = {
     'self love': 'self-love',
@@ -21,7 +26,7 @@ categories = {
 
 def get_daily_affirmation():
     headers = {'Content-Type': 'application/json'}
-    response = requests.get(f'{API_BASE_URL}/affirmations', headers=headers)
+    response = requests.get(f'{API_URL}/affirmations', headers=headers)
     if response.ok:
         return response.json()
     else:
@@ -34,7 +39,7 @@ def add_affirmation(affirmation, author, category):
         'author': author,
         'category': category
     }
-    response = requests.post(f'{API_BASE_URL}/new_affirmation', headers=headers, json=affirmation_data)
+    response = requests.post(f'{API_URL}/new_affirmation', headers=headers, json=affirmation_data)
     if response.ok:
         return response.json()
     else:
@@ -42,7 +47,7 @@ def add_affirmation(affirmation, author, category):
 
 def get_affirmations_by_category(category):
     headers = {'Content-Type': 'application/json'}
-    response = requests.get(f'{API_BASE_URL}/affirmations/category/{category}', headers=headers)
+    response = requests.get(f'{API_URL}/affirmations/category/{category}', headers=headers)
     if response.ok:
         return response.json()
     else:

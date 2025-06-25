@@ -1,5 +1,5 @@
 from flask import Flask, jsonify, request
-from db_utils import get_daily_affirmation, add_affirmation_to_db, get_affirmations_for_category, DbConnectionError
+from db_utils import get_daily_affirmation, add_affirmation_to_db, get_affirmations_for_category
 
 app = Flask(__name__)
 
@@ -17,22 +17,14 @@ def add_affirmation():
 
     if not text:
         return jsonify({'Error': 'Affirmation text is required'}), 400
-
-    try:
+    else:
         add_affirmation_to_db(text, author, category)
-        return jsonify({'confirmation' : 'Affirmation added successfully'})
-
-    except DbConnectionError as e:
-        return jsonify({'Error': str(e)}), 500
+        return jsonify({'Confirmation' : 'Affirmation added successfully'})
 
 @app.route('/affirmations/category/<category>', methods=['GET'])
 def affirmations_by_category(category):
-    try:
         affirmations = get_affirmations_for_category(category)
         return jsonify({'category': category, 'affirmations': affirmations})
-    except DbConnectionError as e:
-        return jsonify({'Error': str(e)}), 500
-
 
 if __name__ == '__main__':
     app.run(debug=True, port=5001)
