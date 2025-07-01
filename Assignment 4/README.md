@@ -1,12 +1,27 @@
-pip install python-dotenv
-pip install mysql-connector-python
-pip install requests
-pip install flask
+## Step 1 
 
+- Clone repository
+- Create virtual environment
+- Replace host, user and password in **config.py** file with your data
 
-create .env file with the variable before running any files {API_URL} = "Insert your api base url here"
+## Step 2 - Installs🔧 
+**Before running**, please ensure you have the following installed *(Can also be found in requirements.txt)* :
+- python-dotenv
+- mysql-connector-python
+- requests
+- flask
 
-replace host, user and password in config file with your data
+## Step 3 - Environment variable
+- Create a `.env` file in the directory
+- Create a variable called **API_URL** and store your api's base url as shown ->
+<code> API_URL = "Insert your api base url here" </code>
 
-first run db_utils file, then app.py file before running main
+## Step 4 - Database Setup
+- Make sure you have the **'affirmations_db'** set up in your mysql *(This SQL file can be found in this Assignment 4 directory)*
 
+## Step 5 - Running the files
+1. run db_utils.py
+2. run app.py
+3. Then run main.py
+
+Follow the prompts to enjoy your daily affirmation, add a new affirmation or view affirmation categories

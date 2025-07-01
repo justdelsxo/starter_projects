@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="067dd964-444a-4f4d-8e61-49874cd901ff" name="Changes" comment="First draft completed with three end points.&#10;&#10;Remaining tasks&#10;1. check coding is neatly written&#10;2. Add Readme and document how to run api&#10;3. Add Requirements&#10;4. remove secrets from config!!!">
+    <list default="true" id="067dd964-444a-4f4d-8e61-49874cd901ff" name="Changes" comment="First draft completed with three end points.&#10;&#10;Remaining tasks&#10;&#10;1. finalise Readme in markdown format&#10;2. remove secrets from config!!!">
       <change afterPath="$PROJECT_DIR$/Assignment 4/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment 4/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assignment 4/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment 4/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 4/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment 4/affirmations_db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 4/affirmations_db.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment 4/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 4/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment 4/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 4/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment 4/db_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 4/db_utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assignment 4/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment 4/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -204,7 +205,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750872610912</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="First draft completed with three end points.&#10;&#10;Remaining tasks&#10;&#10;1. finalise Readme in markdown format&#10;2. remove secrets from config!!!">
+      <option name="closed" value="true" />
+      <created>1750878392239</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1750878392239</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,7 +226,8 @@
     <MESSAGE value="Completed sql assignment - ready for pull request" />
     <MESSAGE value="First draft completed with two end points.&#10;&#10;Remaining tasks&#10;1. additional end point&#10;2 add additional feature to run output&#10;3 check for hardcoding&#10;4 Possibly try add a mood feature&#10;5. make console output visually pleasing&#10;6. check coding is neatly written" />
     <MESSAGE value="First draft completed with three end points.&#10;&#10;Remaining tasks&#10;1. check coding is neatly written&#10;2. Add Readme and document how to run api&#10;3. Add Requirements&#10;4. remove secrets from config!!!" />
-    <option name="LAST_COMMIT_MESSAGE" value="First draft completed with three end points.&#10;&#10;Remaining tasks&#10;1. check coding is neatly written&#10;2. Add Readme and document how to run api&#10;3. Add Requirements&#10;4. remove secrets from config!!!" />
+    <MESSAGE value="First draft completed with three end points.&#10;&#10;Remaining tasks&#10;&#10;1. finalise Readme in markdown format&#10;2. remove secrets from config!!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="First draft completed with three end points.&#10;&#10;Remaining tasks&#10;&#10;1. finalise Readme in markdown format&#10;2. remove secrets from config!!!" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/CFG_Assignments$WeatherProject.coverage" NAME="WeatherProject Coverage Results" MODIFIED="1748640059206" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Assignment 2" />
